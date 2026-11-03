@@ -1,0 +1,32 @@
+### 
+POST http://127.0.0.1:8000/addbook/
+Content-Type: application/json
+
+{
+    "book_name": "Python Programming",
+    "author": "John",
+    "category": "Programming",
+    "price": 450,
+    "quantity": 10
+}
+
+### 
+GET http://127.0.0.1:8000/viewbooks/
+
+###
+GET http://127.0.0.1:8000/searchbook/1/
+
+### 
+PUT http://127.0.0.1:8000/updatebook/1/
+Content-Type: application/json
+
+{
+    "book_name": "Python Programming",
+    "author": "John",
+    "category": "Programming",
+    "price": 500,
+    "quantity": 15
+}
+
+### 
+DELETE http://127.0.0.1:8000/deletebook/2/
